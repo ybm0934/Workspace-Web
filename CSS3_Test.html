@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS3 Selector</title>
+<style type="text/css">
+#header{width:800px; margin:0 auto; background:red;}
+#wrap{width:800px; margin:0 auto; overflow: hidden;}
+#aside{width:200px; float: left; background:blue;}
+#content{width:600px; float:left; background: green;}
+.select{color:red;}
+.item{color:blue;}
+.header{background-color:honeydew;}
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1>#Header 태그</h1>
+	</div>
+	<div id="wrap">
+		<div id="aside">
+			<h1>#aside 태그</h1>
+		</div>
+		<div id="content">
+			<h1>#content 태그</h1>
+		</div>
+	</div>
+	<hr>
+	<div>
+		<h1 class="item header">HTML & CSS3 & JavaScript</h1>
+	</div>
+	<div>
+		<ul>
+			<li class="select">사과</li>
+			<li>바나나</li>
+			<li class="select">오렌지</li>
+		</ul>
+	</div>
+</body>
+</html>

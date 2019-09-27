@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS3 Attribute / Parent / Child Selector</title>
+<style type="text/css">
+	input[type="text"] {background: red;}	
+	input[type="password"] {background: blue;}	
+	#header > h1{color:red;}
+	#section > h1{color:blue;}
+	table > tbody > tr > th {color:greenyellow;}
+	#action > h1:hover{color:red;}
+	#action > h1:active{color:blue;}
+	#action{cursor: pointer;}
+	#status > input:enabled{background-color: white;}
+	#status > input:disabled{background-color: gray;}
+	#status > input:focus{background-color: orange;}
+</style>
+</head>
+<body>
+	<div>
+		<form>
+			<input type="text">
+			<input type="password">
+		</form>
+	</div>
+	<hr>
+	<div id="header">
+		<h1 class="title">Title</h1>
+		<div id="nav">
+			<h1>Navigation</h1>
+		</div>
+	</div>
+	<div id="section">
+		<h1 class="title">Title</h1>
+		<div id="nav">
+			<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit
+				amet, consectetur, adipisci velit..." "There is no one who loves
+				pain itself, who seeks after it and wants to have it, simply because
+				it is pain..."</p>
+		</div>
+	</div>
+	<hr>
+	<div>
+		<table border="1">
+			<tr>
+				<th>이름</th>
+				<th>지역</th>
+			</tr>
+			<tr>
+				<td>홍길동</td>
+				<td>서울시가 다 집이다...</td>
+			</tr>
+		</table>
+	</div>
+	<hr>
+	<div id="action">
+		<h1>반응선택자</h1>
+	</div>
+	<hr>
+	<div id="status">
+		<h2>사용가능</h2>
+		<input>
+		<h2>사용 불가능</h2>
+		<input disabled="disabled">
+	</div>
+</body>
+</html>

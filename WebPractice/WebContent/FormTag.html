@@ -3,6 +3,17 @@
 <head>
 <meta charset="EUC-KR">
 <title>Form Tag</title>
+<style type="text/css">
+	#span_div{
+		border: 1px solid black;
+		text-align: center;
+	}
+	#span_div span{
+		border: 1px solid red;
+		margin: 10px;
+		padding: 30px;
+	}
+</style>
 </head>
 <body>
 	<form action="" method="POST">
@@ -24,31 +35,31 @@
 	</form>
 	<hr>
 	<form action="">
-		<label for="name">ì´ë¦„</label>
+		<label for="name">ÀÌ¸§</label>
 		<input id="name" type="text">
-		<input id="submit" value="ì „ì†¡">
+		<input id="submit" value="Àü¼Û">
 	</form>
 	<hr>
 	<form>
 		<table>
 			<tr>
-				<td><label for="username">ì´ë¦„</label></td>
+				<td><label for="username">ÀÌ¸§</label></td>
 				<td><input id="username" type="text" name="username"></td>
 			</tr>
 			<tr>
-				<td>ì„±ë³„</td>
+				<td>¼ºº°</td>
 				<td>
 					<input id="man" type="radio" name="gender" value="m">
-					<label for="man">ë‚¨ì</label>
+					<label for="man">³²ÀÚ</label>
 					<input id="woman" type="radio" name="gender" value="w">
-					<label for="woman">ì—¬ì</label>					
+					<label for="woman">¿©ÀÚ</label>					
 				</td>			
 			</tr>
 		</table>
-		<input type="submit" value="ê°€ì…">
+		<input type="submit" value="°¡ÀÔ">
 	</form>
 	<hr>
-	<select>
+	<select multiple="multiple">
 		<option>Java</option>
 		<option>HTML5</option>
 		<option>CSS3</option>
@@ -66,5 +77,39 @@
 			<option>3D Transform</option>
 		</optgroup>
 	</select>
+	<hr>
+	<form>
+		<fieldset>
+			<legend>ÀÔ·Â ¾ç½Ä</legend>
+			<table>
+				<tr>
+					<td><label for="name2">ÀÌ¸§</label></td>
+					<td><input id="name2" type="text"></td>
+				</tr>
+				<tr>
+					<td><label for="mail">e-mail</label></td>
+					<td><input id="mail" type="email"></td>
+				</tr>
+			</table>
+			<input type="submit">
+		</fieldset>
+	</form>
+	<hr>
+	<h1>°ø°£ ºĞÇÒ Tag</h1>
+	<hr>
+	<h2>div Tag</h2>
+	<div>div tag - block Çü½Ä</div>
+	<div>div tag - block Çü½Ä</div>
+	<div>div tag - block Çü½Ä</div>
+	<div>div tag - block Çü½Ä</div>
+	<hr>
+	<div id="span_div">
+		<h2>span Tag</h2>
+		<span>span tag - inline Çü½Ä</span>
+		<span>span tag - inline Çü½Ä</span>
+		<span>span tag - inline Çü½Ä</span>
+		<span>span tag - inline Çü½Ä</span>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
