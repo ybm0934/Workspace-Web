@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ScoreTable</title>
+<link rel="stylesheet" href="CSS/ScoreTable.css">
+</head>
+<body>
+	<header>
+		<h1>성적 처리 Web</h1>
+	</header>
+	<hr>
+	<section>
+		<div class="scrBoard">
+			<table id="inTable">
+				<tr>
+					<th>이름</th>
+					<td><input type="text" id="name"></td>
+				</tr>
+				<tr>
+					<th>과목1 점수</th>
+					<td><input type="text" id="sub1" value=""></td>
+				</tr>
+				<tr>
+					<th>과목2 점수</th>
+					<td><input type="text" id="sub2" value=""></td>
+				</tr>
+				<tr>
+					<th>과목3 점수</th>
+					<td><input type="text" id="sub3" value=""></td>
+				</tr>
+			</table>
+		</div>
+		<div class="btnDiv">
+			<input type="button" class="btn" value="저장" onclick="save()">
+		</div>
+		<div class="inputBoard">
+			<h1>성적 일람표(입력순)</h1>
+			<table id="inputBoard">
+				<tbody id="inputTbody">
+					<tr>
+						<th>이름</th>
+						<th>과목1</th>
+						<th>과목2</th>
+						<th>과목3</th>
+						<th>총점</th>
+						<th>평균</th>
+						<th>평가</th>
+						<th>석차</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="avgBoard">
+			<h1>성적 일람표(평균순)</h1>
+			<table id="avgBoard">
+				<tbody id="avgTbody">
+					<tr>
+						<th>이름</th>
+						<th>과목1</th>
+						<th>과목2</th>
+						<th>과목3</th>
+						<th>총점</th>
+						<th>평균</th>
+						<th>평가</th>
+						<th>석차</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<footer> </footer>
+	<script src="JS/ScoreTable.js"></script>
+</body>
+</html>

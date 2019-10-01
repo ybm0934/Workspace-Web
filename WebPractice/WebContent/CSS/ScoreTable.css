@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+header {
+	text-align: center;
+}
+
+#inTable {
+	margin: 0 auto;
+}
+
+#inTable th {
+	padding: 0 20px;
+}
+
+.btnDiv {
+	text-align: center;
+	margin: 30px 0 80px 0;
+}
+
+.btnDiv .btn {
+	width: 100px;
+	height: 40px;
+}
+
+.inputBoard, .avgBoard {
+	text-align: center;
+}
+
+.avgBoard {
+	margin-top: 100px;
+}
+
+#inputBoard, #avgBoard {
+	margin: 0 auto;
+}
+
+#inputBoard th, #avgBoard th, #inputBoard td, #avgBoard td{
+	border: 1px solid gray;
+	padding: 5px 20px;
+}
