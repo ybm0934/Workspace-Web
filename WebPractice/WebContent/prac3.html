@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	margin: 0;
+	width: 100%;
+	height: 700px;
+}
+
+.pic {
+	background: url(image/abcd.jpg) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: inherit;
+	display: table;
+	height: inherit;
+}
+
+.text {
+	background: black;
+	opacity: 0;
+	height: inherit;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.pic:hover .text {
+	color: white;
+	opacity: 0.6;
+	text-align: center;
+	transition: 0.25s;
+}
+
+.text p {
+	margin: 0;
+}
+</style>
+</head>
+<body>
+	<div class="pic">
+		<div class="text">
+			<p>좋은과일 고르는 방법!!</p>
+		</div>
+	</div>
+
+</body>
+</html>

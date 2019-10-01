@@ -4,27 +4,52 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
+#div1 {
+	border: 1px solid red;
+	background-color: pink;
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+}
 
-	#div1{
-		border:1px solid red;
-		background-color: pink;
-		width: 500px;
-		height: 300px;
-		margin: 0 auto;
-	}
-	#div2{
-		border:1px solid blue;
-		background-color: skyblue;
-		width:250px;
-		height: 100px;
-		margin: 0 auto;
-	}
+#div2 {
+	border: 1px solid blue;
+	background-color: skyblue;
+	width: 250px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.pare {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#shadow_box {
+	width: 100%;
+	height: 500px;
+	border: 1px solid black;
+	color: white;
+}
+
+#shadow_box img {
+	width: inherit;
+	height: inherit;
+}
+#shadow_box img:hover {
+	box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+	
+	background-color: black;
+}
 </style>
 </head>
 <body>
 	<div id="div1">
-		<div id="div2">
-			
+		<div id="div2"></div>
+	</div>
+	<div class="pare">
+		<div id="shadow_box">
+			<img alt="" src="image/abcd.jpg">
 		</div>
 	</div>
 </body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.bg {
+	background-color: rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/
+	width: 100%;
+	height: 550px;
+	position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
+	top: 60px;
+}
+
+section {
+	background-image: url(image/abcd.jpg);
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: 400px;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 150px;
+}
+
+section h1 {
+	font-size: 2.5em;
+}
+
+section p {
+	margin-bottom: 30px;
+}
+
+section h1, p, a {
+	position: relative;
+	z-index: 1000; /*맨 앞으로 나오도록 함*/
+}
+</style>
+</head>
+<body>
+	<section>
+		<div class="bg"></div>
+		<h1>Learn to code by cloning real services</h1>
+		<p>Over 6,000+ students are cloning Instagram, Bitcoin, Netflix,
+			Uber, and More!</p>
+		<a href="#" class="btn">Start Coding Like a Boss</a>
+	</section>
+</body>
+</html>

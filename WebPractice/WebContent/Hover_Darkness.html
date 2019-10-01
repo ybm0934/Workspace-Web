@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hover Darkness</title>
+<style type="text/css">
+body {
+	width: 100%;
+	margin: 0;
+}
+
+.div1 {
+	border: 1px solid gray;
+	width: inherit;
+	height: 700px;
+	background-image: url(image/abcd.jpg);
+	background-size: 100% 100%;
+	display: inline-table;
+}
+
+.div2 {
+	width: inherit;
+	height: inherit;
+	background-color: black;
+	opacity: 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.div1:hover .div2 {
+	opacity: 0.6;
+	transition: 0.25s;
+	color: white;
+	text-align: center;
+}
+
+.div2 p {
+	margin: 0;
+	font-size: 2em;
+}
+</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="div2">
+			<p>Hover Darkness</p>
+		</div>
+	</div>
+</body>
+</html>
